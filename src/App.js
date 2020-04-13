@@ -19,8 +19,8 @@ const App = () => {
     fetchData();
   });
 
-  const updateButton = async () => {
-    let data = await fetch("/api", {
+  const updateButton = () => {
+    fetch("/api", {
       method: "post",
       body: JSON.stringify({ message: newMsg }),
     });
